@@ -1,0 +1,36 @@
+/* src/components/CharacterCard.module.css */
+.card {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition for smooth animation */
+  margin: 10px; /* Add margin for spacing between cards */
+  width: calc(25% - 20px); /* Set the width of each card to occupy 25% of the container width */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+.card:hover {
+  transform: scale(1.03); /* Scale up the card slightly on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add a stronger shadow on hover */
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.details {
+  padding: 10px;
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: calc(50% - 20px); /* Set the width to occupy 50% of the container width on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    width: calc(100% - 20px); /* Set the width to occupy 100% of the container width on even smaller screens */
+  }
+}
