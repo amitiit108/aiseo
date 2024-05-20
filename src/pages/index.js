@@ -1,4 +1,3 @@
-// pages/index.js
 import axios from 'axios';
 import CharacterCard from '../components/CharacterCard';
 import styles from '../styles/Home.module.css';
